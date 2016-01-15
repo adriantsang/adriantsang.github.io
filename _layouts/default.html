@@ -1,26 +1,15 @@
-<!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
-			<nav>
-			<ul>
+{% include header.html %}
+
+	<nav>
+		<ul>
 			<li><a href="/">Home</a></li>
 			<li><a href="/blog">Blog</a></li>
-			</ul>
-			</nav>
-			<div class="container">
+		</ul>
+	</nav>
+	<div class="container">
 			
-			{{ content }}
+		{{ content }}
 			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:adrian.tsang@uwaterloo.ca">email</a></li>
-	        		<li><a href="https://github.com/adriantsang">github</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+	</div>
+
+{% include footer.html %}

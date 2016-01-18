@@ -14,15 +14,18 @@ body {
     background-color: #abc;
 }
 
-#email {
-    display: block;
-    padding: 10px 0 0 10px;
+header {
+    height: 56px;
+}
+
+#email-icon {
+    padding: 10px 0 10px 10px;
     opacity: .2;
     transition: all .5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-#email:hover {
-    opacity: .4;
+#email-icon:hover {
+    opacity: .5;
 }
 
 .container {
@@ -40,7 +43,8 @@ body {
     font-size: 112px;
     font-weight: 300;
     text-align: center;
-    transition: all .5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: font-size .5s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: blue;
 }
 
 #adrian span {
@@ -55,11 +59,10 @@ body {
     font-size: 93px;
     font-weight: 700;
     text-align: center;
-    transition: all .5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-#octocat {
-    padding-top: 22px;
+#github {
+    background-color: red;
 }
 
 #octocat:hover {
@@ -76,7 +79,7 @@ body {
     body {
         line-height: 60px;
     }
-    #email {
+    #email-icon {
         height: 36px;
         width: 36px;
     }
@@ -85,8 +88,5 @@ body {
     }
     #tsang {
         display: initial;
-    }
-    img {
-        padding: 0;
     }
 }
